@@ -1,0 +1,188 @@
+
+/* ----- Global style ----- */
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('roboto.eot'); /* IE9 Compat Modes */
+    src: url('roboto.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('roboto.woff') format('woff'), /* Modern Browsers */
+    url('roboto.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('roboto.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+body {
+    font-family: Roboto;
+    background-color: rgb(240, 240, 240);
+}
+
+nav {
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: rgb(240, 240, 240);
+}
+
+.logo {
+    width: 40px;
+}
+
+main {
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 5%;
+    align-items: center;
+}
+
+p {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: Roboto;
+    font-size: 4rem;
+}
+
+/* ----- Main style ----- */
+
+/* ----- Welcome section ----- */
+
+.welcome {
+    grid-column: 2 / 11;
+    min-height: 90vh;
+    display: inline-flexbox;
+}
+
+.welcome-title {
+    grid-column: 2 / 11;
+    padding-bottom: 10vh;
+    padding-top: 20px;
+    border-top: 2px solid black;
+}
+
+/* ----- Skills section ----- */
+
+.myskills {
+    display: grid;
+    grid-column: 2 / 11;
+    align-items: top;
+    min-height: 90vh;
+}
+
+.skills-title {
+    grid-column: 1 / 12;
+    border-top: 2px solid black;
+    display: inline-grid;
+}
+
+.skills-title h1 {
+    padding: 20px 0px;
+}
+
+.skills-column-one {
+    grid-column: 1 / 4;
+    padding-top: 20px;
+    display: inline-flexbox;
+}
+
+.skills-column-two {
+    grid-column: 4 / 8;
+    margin: 0px 10px;
+    display: inline-flexbox;
+}
+
+.skills-column-three {
+    grid-column: 8 / 12;
+    display: inline-flexbox;
+}
+
+.skills-column-one, .skills-column-two, .skills-column-three {
+    border-top: 2px solid black;
+    padding-top: 20px;
+    position: relative;
+}
+
+.skills-column-one ul, .skills-column-two ul, .skills-column-three ul {
+    list-style: none;
+}
+
+/* ----- Employment history section ----- */
+
+.employment {
+    display: grid;
+    grid-column: 2 / 11;
+    align-items: center;
+    border-top: 2px solid black;
+    padding-top: 20px;
+    min-height: 100vh;
+}
+
+.employment-title {
+    grid-column: 2 / 11;
+    padding-bottom: 10vh;
+    padding-top: 20px;
+    border-top: 2px solid black;
+}
+
+.employment-container {  
+    display: grid;
+    grid-column: 2 / 11;
+}
+
+.employment .employment-content {
+    padding: 20px 0px;
+}
+
+.employment-column-one ul {
+    list-style: none;
+}
+
+.employment-column-one {
+    border-top: 2px solid black;
+    padding-top: 20px;
+    position: relative;
+}
+
+
+
+/* ----- Footer style ----- */
+
+footer {
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+footer ul {
+    list-style: none;
+    text-align: right;
+}
+
+footer ul li {
+    display: inline;
+    padding: 0px 0px 0px 20px;
+}
+
+footer ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
